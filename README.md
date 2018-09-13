@@ -1,41 +1,29 @@
-# A starter project for React/Redux
+<img src='https://images.unsplash.com/photo-1527153818091-1a9638521e2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5fce4ce8856a711cc50a14e03e58783a&auto=format&fit=crop&w=2316&q=80' >
 
-> A minimalistic React/Redux starter project
 
-To use:
+# Newscentre
 
-* Fork this repo
-* Rename your repo according to the app you're building
+Matt, Natt, Leslie, Richard, Marie
 
-```sh
-git clone https://github.com/[your-org]/[your-app].git
-cd [your-app] && yarn
-```
+Git Master - Leslie
+Gate Keeper - Richard
 
-This is the structure of this boilerplate:
+# Group Ideas
+* SendGrid - Form collecting data and sending it through emails
+* Weather matching - Traveling
+* Shopping Cart - SendGrid
+* API External
+* Client side - react - Front end
+* Redux - using bulmer template so we can focus on other parts instead of Front End
+* 
 
-```sh
-.
-├── client
-│   ├── actions
-│   │   └── index.js
-│   ├── components
-│   │   ├── AddWord.jsx
-│   │   ├── App.jsx
-│   │   ├── Word.jsx
-│   │   └── Words.jsx
-│   ├── reducers
-│   │   ├── index.js
-│   │   └── words.js
-│   └── index.js
-├── public
-│   ├── index.html
-│   └── main.css
-├── server
-│   ├── index.js
-│   └── server.js
-├── .gitignore
-├── package.json
-├── README.md
-└── webpack.config.js
-```
+
+## User Stories
+*
+
+### MVP
+* 1 Test per person - 5 in total
+
+
+
+#### Stretch
