@@ -5,8 +5,27 @@
   border-radius: 50%;
 }
 
-button {
+/* button {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+} */
+
+
+#formPage {
+  max-width: 33%;
+  background-color: lightgrey;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-left: 40%;
+  margin-top: 25%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
+
+/* #text{
+  min-height: 150px;
+  min-width: 400px;
+} */
