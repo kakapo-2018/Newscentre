@@ -21,8 +21,8 @@ export default class LeftArticle extends React.Component {
       {this.state.leftarticle.map(larticle => {
         return (
            <div>
-               <h2>Title</h2>
-               <p>Content</p>
+               <h2>{larticle.title}</h2>
+               <p>{larticle.content}</p>
            </div>     
         )
         }

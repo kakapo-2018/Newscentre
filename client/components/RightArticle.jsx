@@ -7,7 +7,7 @@ import React from 'react'
 // 3 The title is clickable and opens the newswebsite with that article
 // 4 Stretch is to open LeftArticle.jsx with just the one article
 
-export default class LeftArticle extends React.Component {
+export default class RightArticle extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
@@ -18,11 +18,11 @@ export default class LeftArticle extends React.Component {
     render(){
     return (
       <React.Fragment>
-      {this.state.rightarticle.map(larticle => {
+      {this.state.rightarticle.map(rarticle => {
         return (
            <div>
-               <h2>Title</h2>
-               <p>Content</p>
+               <h2>{rarticle.title}</h2>
+               <p>{rarticle.content}</p>
            </div>     
         )
         }
