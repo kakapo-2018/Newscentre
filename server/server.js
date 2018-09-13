@@ -2,8 +2,8 @@ const path = require('path')
 const express = require('express')
 const request = require('superagent')
 
-const rightSources = 'breitbart-news,fox-news,fox-sports'
-const leftSources = 'liberation'
+const rightSources = 'breitbart-news,fox-news,fox-sports,daily-mail,the-american-conservative,la-nacion'
+const leftSources = 'liberation,the-guardian-uk,mirror,independent,the-new-york-times,buzzfeed,the-huffington-post,vice-news,mtv-news-uk,mtv-news'
 
 const apiKey = 'apiKey=324d17864acd4c8387e3999687de6f1a'
 const server = express()
@@ -24,8 +24,8 @@ server.get('/search',(req,res) => {
     request.get(apiEndPoint+'sources='+leftSources+'&'+'q='+query+'&'+apiKey)
   ]).then(resultsArray => {
     res.json({
-      left: resultsArray[0].body,
-      right: resultsArray[1].body
+      right: resultsArray[0].body,
+      left: resultsArray[1].body
     })
     .catch(err => {
       console.log(err)
