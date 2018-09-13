@@ -1,14 +1,32 @@
 import React from 'react'
-import Words from './Words'
-import AddWord from './AddWord'
-import ActualForm from './ActualForm';
 
-const App = () => (
-  <div className='app-container'>
-    <Words />
-    <AddWord />
-    <ActualForm/>
-  </div>
-)
+import Header from './Header'
+import Landingpage from './Landingpage'
+import Subscription from './Subscription'
+import Footer from './Footer'
+import { connect } from 'react-redux'
 
-export default App
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <div className='app'>
+        <Header />
+        {this.props.activePage == "Subscription" ? <Subscription /> : <Landingpage />}
+        <Footer />
+      </div>
+    )
+  }
+}
+
+function mapStateToProps(state) {
+  return {
+    activePage: state.navigationReducer.activePage
+  }
+}
+
+export default connect(mapStateToProps)(App)
+
