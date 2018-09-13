@@ -3,21 +3,22 @@ import Header from './Header'
 import Landingpage from './Landingpage'
 import Subscription from './Subscription'
 import Footer from './Footer'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
+
 
 class App extends React.Component {
   constructor(props) {
     super(props)
   }
 
-render () {
-  return (
-    <div className='app'>
-      <Header />
-      {this.props.activePage == "Subscription" ? <Subscription/> : <Landingpage/>}
-      <Footer />
-    </div>
-  )
+  render() {
+    return (
+      <div className='app'>
+        <Header />
+        {this.props.activePage == "Subscription" ? <Subscription /> : <Landingpage />}
+        <Footer />
+      </div>
+    )
   }
 }
 
