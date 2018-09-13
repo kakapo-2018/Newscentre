@@ -5,6 +5,7 @@ import AddWord from './AddWord'
 
 const App = () => (
   <div className='app-container'>
+          <h1>News centre!</h1>
     <Words />
     <AddWord />
   </div>

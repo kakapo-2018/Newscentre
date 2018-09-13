@@ -5,7 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "start": "webpack && node server",
-    "dev": "nodemon --watch server & webpack --watch"
+    "dev": "nodemon --watch server & webpack --watch",
+    "test": "jest --watch"
   },
   "author": "EDA",
   "license": "ISC",
@@ -15,11 +16,19 @@
       "react"
     ]
   },
+  "jest": {
+    "setupFiles": [
+      "./tests/setupTest.js"
+    ]
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "jest": "^23.6.0",
     "nodemon": "^1.14.12",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
