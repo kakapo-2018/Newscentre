@@ -1,9 +1,20 @@
-let nextWordId = 0
-
-export const addWord = (word) => {
+export const searchWord = (word) => {
   return {
-    type: 'ADD_WORD',
-    id: nextWordId++,
-    word
+    type: 'SEARCH',
+    word: word
+  }
+}
+
+export const getArticles = (articles) => {
+  return {
+    type: 'GET-ARTICLES',
+    articles: articles
+  }
+}
+
+export const navigate = target => {
+  return {
+    type: 'NAVIGATE',
+    target: target
   }
 }

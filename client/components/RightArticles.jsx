@@ -11,18 +11,19 @@ import RightArticle from './RightArticle'
 export default class RightArticles extends React.Component {
     constructor (props) {
         super(props)
-        this.state = {
-          rightarticles: articles.articles
-        }
+        // this.state = {
+        // //   rightarticles: articles.articles
+        // }
     }
 
     render(){
     return (
       <React.Fragment>
-      {this.state.rightarticles.map(rarticle => {
+        <p>RIGHT ARTICLES</p>
+      {/* {this.state.rightarticles.map(rarticle => {
         return <RightArticle article={rarticle} />
         }
-      )}
+      )} */}
       </React.Fragment>
     )
   }

@@ -12,6 +12,8 @@ class App extends React.Component {
   }
 
   render() {
+    console.log('????')
+    console.log(this.props.activePage)
     return (
       <div className='app'>
         <Header />
@@ -24,7 +26,7 @@ class App extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    activePage: state.navigationReducer.activePage
+    activePage: state.activePageReducer.activePage
   }
 }
 
