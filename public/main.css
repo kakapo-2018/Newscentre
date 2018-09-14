@@ -11,7 +11,7 @@
   border: 1px solid black;
   border-radius: 4px;
   margin-left: 40%;
-  margin-top: 25%;
+  margin-top: 5%;
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
@@ -24,4 +24,53 @@
 
 .title {
   background-color: orange
+}
+
+#left{
+  max-width: 35%;
+  margin-right: 10%;
+  margin-left: 10%;
+ 
+
+}
+#right{
+  max-width: 35%;
+  margin-right: 10%;
+}
+
+img{
+  border: 2px solid black;
+  border-radius: 4px;
+  min-width: 500px;
+  min-height: 300px;
+  max-width: 500px;
+  max-height: 300px;
+}
+
+#centre{
+  max-width: 20px;
+  margin-right: 150px;
+  background-color:orange;
+}
+
+#title {
+  text-align: center
+}
+
+#searchBar{
+  margin-left: 33%;
+  padding-bottom: 50px;
+max-width: 40%;
+}
+
+#navy {
+  display: flex;
+  float: left;
+  width: 100%;
+  padding-left: 30px;
+}
+
+#lol{
+  padding-left: 30px;
+  padding-right: 30px;
 }

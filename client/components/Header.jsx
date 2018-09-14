@@ -34,9 +34,9 @@ render(){
     return (
     <Router>
     <div className = 'title'>
-        <h2>News Centre</h2>
-        <h3><Link to="/" className={'navoptions'} onClick={(e)=> this.handleHome(e)}>Home</Link></h3> 
-        <h3><Link to="/" className={'navoptions'} onClick={(e)=> this.handleSubscription(e)}>Subscribe</Link></h3>
+        <h2 id="navy"> News Centre</h2>
+        <Link to="/" className={'navoptions'} onClick={(e)=> this.handleHome(e)}><span id="lol">Home</span></Link>
+        <Link to="/" className={'navoptions'} onClick={(e)=> this.handleSubscription(e)}>Subscribe</Link>
     </div>
     </Router>
     )

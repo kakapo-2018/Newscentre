@@ -11,12 +11,15 @@ function submitSearchWord (e, dispatch) {
 }
 
 const Searchbar = (props) => (
-    <input 
+<div id="searchBar">
+    <input class="input is-large" type="text"
         placeholder='Enter your search term'
         onKeyUp={e => {
             submitSearchWord(e, props.dispatch)
         }}
     />
+
+</div>
 )
     
 export default connect()(Searchbar)

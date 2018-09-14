@@ -1,7 +1,7 @@
 import React from 'react'
 import LeftArticle from './LeftArticle'
 //import API from API TBD
-
+import data from '../../public/data.json'
 
 // 1 Return all Left Wing articles from the API
 // 2 Map - these articles - displays a title and a short summary
@@ -19,11 +19,13 @@ export default class LeftArticles extends React.Component {
     render(){
     return (
       <React.Fragment>
-          <p>LEFT ARTICLES</p>
-      {/* {this.state.articles.map(larticle => {
+        <h1 id="title" class="title">LEFT ARTICLES</h1>
+
+        
+      {data.left.articles.map(larticle => {
         return <LeftArticle article={larticle} />
         }
-      )} */}
+      )} 
       </React.Fragment>
     )
   }
