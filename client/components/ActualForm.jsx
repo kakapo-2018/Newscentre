@@ -5,7 +5,27 @@ class ActualForm extends React.Component{
     constructor(props){
     super(props)
         this.state ={}
+        this.form = this.form.bind(this)
+        console.log(this.props.handleClick)
     }
+
+    form(){
+        
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            
+            event.preventDefault();
+            var form = this
+            window.form = form
+            emailjs.sendForm('gmail', 'template_QumGGcga', form);
+            
+        })
+
+        setTimeout(() => {
+            this.props.handleClick()
+        }, 50);
+    }
+
+   
 
 
     render(){
@@ -43,9 +63,11 @@ class ActualForm extends React.Component{
         <input class="input is-primary" type="text" name="from_news" placeholder="Enter comments"/>
         </div></div>
             {/* <input id="newsfeed" type="text" name="from_news"/> */}
-            <input onClick={this.props.handleClick} class="button is-link" type="submit" value="Send"/>
+            <input onClick={this.form} class="button is-link" type="submit" value="Send"/>
         </form>
         </div>
+
+        
         </div>
         )
     }

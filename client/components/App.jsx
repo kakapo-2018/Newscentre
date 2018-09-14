@@ -3,6 +3,7 @@ import React from 'react'
 import Header from './Header'
 import Landingpage from './Landingpage'
 import ActualForm from './ActualForm'
+import Form from './Form'
 import Footer from './Footer'
 import { connect } from 'react-redux'
 
@@ -17,7 +18,7 @@ class App extends React.Component {
     return (
       <div className='app'>
         <Header activePage={this.props.activePageReducer} />
-        {this.props.activePageReducer === "Subscription" ? <ActualForm /> : <Landingpage />}
+        {this.props.activePageReducer === "Subscription" ? <Form /> : <Landingpage />}
         <Footer />
       </div>
     )
