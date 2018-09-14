@@ -3,11 +3,13 @@ import LeftArticles from './LeftArticles'
 import RightArticles from './RightArticles'
 import Searchbar from './Searchbar'
 
-class App extends React.Component {
+class Landingpage extends React.Component {
 
     render() {
         return (
-            <div classname='landingpage'>
+            <div className='landingpage'>
+
+            <p>HELOOO</p>
                 <Searchbar />
                 <LeftArticles />
                 <RightArticles />
@@ -15,3 +17,5 @@ class App extends React.Component {
         )
     }
 }
+
+export default Landingpage
