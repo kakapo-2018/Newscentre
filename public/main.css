@@ -5,6 +5,31 @@
   border-radius: 50%;
 }
 
+
+a {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+p {
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 100px;
+}
+h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+#logo {
+  border: 0px;
+  height: 320px;
+}
+
 #formPage {
   max-width: 33%;
   background-color: lightgrey;
@@ -23,34 +48,57 @@
 }
 
 .title {
-  background-color: orange
+  background-color: white
+}
+
+#righttitle {
+  color: red;
+  text-align: center;
+  font-size: 40px;
+}
+
+#lefttitle {
+  color: blue;
+  text-align: center;
+  font-size: 40px;
+}
+
+#rule {
+  height: 5px;
+    border-style: solid;
+    border-color: black;
+    border-left: 0px;
+    border-right: 0px;
+    border-width: 1px ;
+
 }
 
 #left{
-  max-width: 35%;
-  margin-right: 10%;
-  margin-left: 10%;
- 
+  max-width: 48%;
+  margin-right: 2%;
+  margin-left: 2%;
+
 
 }
 #right{
-  max-width: 35%;
-  margin-right: 10%;
+  max-width: 48%;
+  margin-right: 2%;
 }
 
-img{
-  border: 2px solid black;
-  border-radius: 4px;
-  min-width: 500px;
-  min-height: 300px;
+#newsimage{
+  padding-top: 10px;
+  min-width: 700px;
+  min-height: 450px;
   max-width: 500px;
   max-height: 300px;
+  filter: grayscale(80%);
 }
 
 #centre{
-  max-width: 20px;
-  margin-right: 150px;
-  background-color:orange;
+  max-width: 3px;
+  margin-right: 20px;
+  background-color:black;
+  padding: 0;
 }
 
 #title {
@@ -67,10 +115,14 @@ max-width: 40%;
   display: flex;
   float: left;
   width: 100%;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
-#lol{
+#headerlinks{
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
   padding-left: 30px;
   padding-right: 30px;
+  text-align: center;
 }

@@ -20,14 +20,14 @@ export default class RightArticles extends React.Component {
     render(){
     return (
       <React.Fragment>
-        <h1 id="title" class="title">RIGHT ARTICLES</h1>
+        <h1 id="righttitle" class="title">RIGHT ARTICLES</h1>
 
         {console.log(data.right)}
       {data.right.articles.map(rarticle => {
         return <RightArticle article={rarticle} />
         }
-      )} 
+      )}
       </React.Fragment>
     )
   }
-} 
+}

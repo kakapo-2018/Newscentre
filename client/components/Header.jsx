@@ -21,7 +21,7 @@ class Header extends React.Component{
 
 handleSubscription(e) {
     console.log('hit func');
- 
+
     this.props.returnToListing()
 }
 
@@ -34,9 +34,9 @@ render(){
     return (
     <Router>
     <div className = 'title'>
-        <h2 id="navy"> News Centre</h2>
-        <Link to="/" className={'navoptions'} onClick={(e)=> this.handleHome(e)}><span id="lol">Home</span></Link>
-        <Link to="/" className={'navoptions'} onClick={(e)=> this.handleSubscription(e)}>Subscribe</Link>
+        <center><img id='logo' src='/title.svg'/></center>
+        <Link to="/" className={'navoptions'} onClick={(e)=> this.handleHome(e)}><span id="headerlinks">Home</span></Link>
+        <Link to="/" className={'navoptions'} onClick={(e)=> this.handleSubscription(e)}><span id="headerlinks">Subscribe</span></Link>
     </div>
     </Router>
     )
