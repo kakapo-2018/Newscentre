@@ -12,21 +12,21 @@ export default class LeftArticles extends React.Component {
     constructor (props) {
         super(props)
         // this.state = {
-        // //   articles : articles.left 
+        // //   articles : articles.left
         // }
     }
 
     render(){
     return (
       <React.Fragment>
-        <h1 id="title" class="title">LEFT ARTICLES</h1>
+        <h1 id="lefttitle" class="title">LEFT ARTICLES</h1>
 
-        
+
       {data.left.articles.map(larticle => {
         return <LeftArticle article={larticle} />
         }
-      )} 
+      )}
       </React.Fragment>
     )
   }
-}  
+}

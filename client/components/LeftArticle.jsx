@@ -17,15 +17,16 @@ export default class LeftArticle extends React.Component {
     render(){
     return (
       <React.Fragment>
-       
+
       <div>
+          <hr id='rule'/>
           <h2><a target="_blank" href={this.props.article.url}>{this.props.article.title}</a></h2>
           <br/>
           <p>{this.props.article.content}</p>
-          <img src={this.props.article.urlToImage}/>
+          <img id='newsimage' src={this.props.article.urlToImage}/>
           <br/>
-      </div>     
+      </div>
  </React.Fragment>
     )
   }
-}  
+}
