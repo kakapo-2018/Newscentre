@@ -2,7 +2,7 @@ import React from 'react'
 
 import Header from './Header'
 import Landingpage from './Landingpage'
-import Subscription from './Subscription'
+import ActualForm from './ActualForm'
 import Footer from './Footer'
 import { connect } from 'react-redux'
 
@@ -13,11 +13,11 @@ class App extends React.Component {
 
   render() {
     console.log('????')
-    console.log(this.props.activePage)
+    console.log(this.props.activePageReducer)
     return (
       <div className='app'>
-        <Header />
-        {this.props.activePage == "Subscription" ? <Subscription /> : <Landingpage />}
+        <Header activePage={this.props.activePageReducer} />
+        {this.props.activePageReducer === "Subscription" ? <ActualForm /> : <Landingpage />}
         <Footer />
       </div>
     )
@@ -26,7 +26,7 @@ class App extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    activePage: state.activePageReducer.activePage
+    activePageReducer: state.activePageReducer
   }
 }
 

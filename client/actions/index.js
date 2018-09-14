@@ -13,8 +13,12 @@ export const getArticles = (articles) => {
 }
 
 export const navigate = target => {
+  console.log('navigate');
+  console.log(target);
+  
+  
   return {
-    type: 'NAVIGATE',
-    target: target
+    type: "NAVIGATE",
+    target
   }
 }
