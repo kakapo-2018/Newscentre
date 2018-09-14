@@ -11,18 +11,19 @@ import LeftArticle from './LeftArticle'
 export default class LeftArticles extends React.Component {
     constructor (props) {
         super(props)
-        this.state = {
-          leftarticles: articles.articles
-        }
+        // this.state = {
+        // //   articles : articles.left 
+        // }
     }
 
     render(){
     return (
       <React.Fragment>
-      {this.state.leftarticles.map(larticle => {
+          <p>LEFT ARTICLES</p>
+      {/* {this.state.articles.map(larticle => {
         return <LeftArticle article={larticle} />
         }
-      )}
+      )} */}
       </React.Fragment>
     )
   }
