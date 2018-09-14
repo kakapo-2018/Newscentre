@@ -19,6 +19,7 @@ class Form extends React.Component {
             view: false
         })
         
+        
     }
 
 render() {
