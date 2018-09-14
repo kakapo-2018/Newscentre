@@ -9,10 +9,25 @@ class Landingpage extends React.Component {
         return (
             <div className='landingpage'>
 
-            <p>HELOOO</p>
-                <Searchbar />
-                <LeftArticles />
-                <RightArticles />
+            <div class="container">
+            
+  <Searchbar />
+  
+</div>
+                
+
+                <div class="columns">
+  <div id="left" class="column">
+  <LeftArticles />
+  </div>
+  <div id="centre" class="column">
+  </div>
+  <div id="right" class="column">
+  <RightArticles />
+  </div>
+  </div>
+                
+                
             </div>
         )
     }

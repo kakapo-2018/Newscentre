@@ -1,6 +1,7 @@
 import React from 'react'
 import RightArticle from './RightArticle'
 //import API from API TBD
+import data from '../../public/data.json'
 
 
 // 1 Return all Left Wing articles from the API
@@ -19,11 +20,13 @@ export default class RightArticles extends React.Component {
     render(){
     return (
       <React.Fragment>
-        <p>RIGHT ARTICLES</p>
-      {/* {this.state.rightarticles.map(rarticle => {
+        <h1 id="title" class="title">RIGHT ARTICLES</h1>
+
+        {console.log(data.right)}
+      {data.right.articles.map(rarticle => {
         return <RightArticle article={rarticle} />
         }
-      )} */}
+      )} 
       </React.Fragment>
     )
   }

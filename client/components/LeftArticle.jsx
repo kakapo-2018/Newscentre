@@ -11,23 +11,21 @@ export default class LeftArticle extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-          leftarticle: article.article
         }
     }
 
     render(){
     return (
       <React.Fragment>
-      {this.state.leftarticle.map(larticle => {
-        return (
-           <div>
-               <h2>{larticle.title}</h2>
-               <p>{larticle.content}</p>
-           </div>     
-        )
-        }
-      )}
-      </React.Fragment>
+       
+      <div>
+          <h2><a target="_blank" href={this.props.article.url}>{this.props.article.title}</a></h2>
+          <br/>
+          <p>{this.props.article.content}</p>
+          <img src={this.props.article.urlToImage}/>
+          <br/>
+      </div>     
+ </React.Fragment>
     )
   }
 }  

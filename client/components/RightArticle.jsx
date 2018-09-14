@@ -11,22 +11,21 @@ export default class RightArticle extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-          rightarticle: article.article
+          
         }
     }
 
     render(){
     return (
       <React.Fragment>
-      {this.state.rightarticle.map(rarticle => {
-        return (
+       
            <div>
-               <h2>{rarticle.title}</h2>
-               <p>{rarticle.content}</p>
+               <h2><a target="_blank" href={this.props.article.url}>{this.props.article.title}</a></h2>
+               <br/>
+               <p>{this.props.article.content}</p>
+               <img src={this.props.article.urlToImage}/>
+               <br/>
            </div>     
-        )
-        }
-      )}
       </React.Fragment>
     )
   }
